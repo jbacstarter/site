@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.backgroundcontainer {
+    width: 100%;    
+    height: 100vh;
+    background: url(https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 50px;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#00545d, #000729);
+}
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 5px  0px;
+
+}
+#nav-btn {
+    margin: 20px 0 0 0;
+}
+.Home {
+    margin: 50px 0 0 0;
+}
+#nav-btn:hover {
+    background: lightcyan;
+    cursor: pointer;
+    
+}
+/*start of horizontal nav bar */
+.horiznav h1, h2{
+    color: white;
+    
+}
+.horiznav h1 {
+    margin: 60px 0 0 75px;
+}
+.horiznav h2 {
+    position: absolute;
+    top: 50px;
+    right: 8rem;
+}
+.horiznav button h2{
+    transform: translateY(50%);
+    margin: 5px 0 0 0;
+    color: white;
+    font-size: 180%;
+    background: linear-gradient(45deg, #df4881, #c430d7);   
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    padding: 10px 10px;
+}
+.horiznav h2:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+/* The end of horiznav */
+
+/* Start of welcomecont */
+
+.welcomecont h1, h2 {
+    color: white;
+}
+.welcomecont h1 {
+    text-decoration: underline solid orange;
+}
+.welcomecont {
+    margin: 100px 0 0 15rem;
+}
+.welcomecont button {
+    transform: translateY(50%);
+    margin: 5px 0 0 0;
+    color: white;
+    font-size: 180%;
+    background: linear-gradient(45deg, #df4881, #c430d7);   
+    padding: 15px 20px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+}
+.welcomecont button:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    color: orange;
+    border-top-right-radius: 30px;
+}
