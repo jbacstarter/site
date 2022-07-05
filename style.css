@@ -193,7 +193,6 @@ background: linear-gradient(337deg, rgba(80,100,252,0.7067869384081757) 20%, rgb
         width: 10%;
         height: 10vh;
         animation: bubble 10s linear infinite;
-        z-index: -0.2;
     }
     .bubblecontainer img:nth-child(5) {
         display: none;
