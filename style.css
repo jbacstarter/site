@@ -64,10 +64,11 @@ button {
     margin: 5px 0 0 0;
     color: white;
     font-size: 180%;
-    background: linear-gradient(45deg, #df4881, #c430d7);   
+    background: rgb(80,100,252);
+    background: linear-gradient(337deg, rgba(80,100,252,0.7067869384081757) 20%, rgba(243,243,243,0.9700922605370274) 81%, rgba(70,92,252,0.5695320364473915) 84%);  
     border-radius: 30px;
     border-top-right-radius: 0;
-    padding: 10px 10px;
+    padding: 5px 0px;
 }
 .horiznav h2:hover{
     color: orange;
@@ -92,10 +93,12 @@ button {
     margin: 5px 0 0 0;
     color: white;
     font-size: 180%;
-    background: linear-gradient(45deg, #df4881, #c430d7);   
+    background: rgb(80,100,252);
+    background: linear-gradient(337deg, rgba(80,100,252,0.7067869384081757) 20%, rgba(243,243,243,0.9700922605370274) 81%, rgba(70,92,252,0.5695320364473915) 84%);
     padding: 15px 20px;
     border-radius: 30px;
     border-top-right-radius: 0;
+    
 }
 .welcomecont button:hover {
     cursor: pointer;
@@ -105,8 +108,11 @@ button {
 }
 
 @media only screen and (max-width: 926px) {
+    .navbar {
+        width: auto;
+    }
     .backgroundcontainer {
-        width: 100%;    
+        width: auto;    
         height: 100vh;
         background: url(https://images.pexels.com/photos/9211528/pexels-photo-9211528.jpeg);
         background-position: center;
@@ -135,6 +141,9 @@ button {
     }
 } 
 @media only screen and (max-width: 390px){
+    .navbar {
+        width: auto;
+    }
     .horiznav h1 {
         margin: 50px 0 0 30px;
     }
@@ -157,8 +166,10 @@ button {
         transform: translateY(50%);
         margin: 5px 0 0 0;
         color: white;
-        font-size: 180%;
-        background: linear-gradient(45deg, #df4881, #c430d7);   
+        font-size: 155%;
+        background: rgb(80,100,252);
+background: linear-gradient(337deg, rgba(80,100,252,0.7067869384081757) 20%, rgba(243,243,243,0.9700922605370274) 81%, rgba(70,92,252,0.5695320364473915) 84%);   
+
         padding: 15px 20px;
         border-radius: 30px;
         border-top-right-radius: 0;
@@ -170,6 +181,52 @@ button {
         font-size: 130%;
 
     }
+    .bubblecontainer {
+        width: 95%;
+        height: 50vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 150px 0 0;
+    }
+    .bubblecontainer img {
+        width: 10%;
+        height: 10vh;
+        animation: bubble 10s linear infinite;
+        z-index: -0.2;
+    }
+    .bubblecontainer img:nth-child(5) {
+        display: none;
+    }
+    @keyframes bubble {
+        0% {
+            transform: translateY(0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-100vh);
+            opacity: 0;
+        }
+    }
+    .bubblecontainer img:nth-child(1) {
+        animation-delay:3s ;
+    }
+    .bubblecontainer img:nth-child(2) {
+        animation-delay: 8s;
+    }
+    .bubblecontainer img:nth-child(3) {
+        animation-delay: 1s;
+    }
+    .bubblecontainer img:nth-child(4) {
+        animation-delay: 6s;
+    }
+
     }   
     @media only screen and (max-width: 220px){
         .welcomecont button {
